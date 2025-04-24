@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing - PhishProof Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0c0c0c;
+      color: #f1f1f1;
+      position: relative;
+    }
+    header {
+      background-color: #121212;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      color: #00ffcc;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1e1e1e;
+    }
+    nav a {
+      color: #00ffcc;
+      margin: 0 15px;
+      text-decoration: none;
+      padding: 1rem;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #00ffcc;
+      color: #0c0c0c;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #0f0f0f, #202020);
+    }
+    .hero h2 {
+      color: #00ffcc;
+      font-size: 2.5rem;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 1rem auto;
+      font-size: 1.2rem;
+    }
+    .pricing-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+    }
+    .pricing-plan {
+      background-color: #1a1a1a;
+      border-left: 4px solid #00ffcc;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .pricing-plan h3 {
+      margin-top: 0;
+      color: #00ffcc;
+      font-size: 1.8rem;
+    }
+    .pricing-plan p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .pricing-plan .price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00ffcc;
+      margin-bottom: 1.5rem;
+    }
+    .pricing-plan .features {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    .pricing-plan .features li {
+      margin: 0.5rem 0;
+    }
+    .cta-button {
+      background-color: #00ffcc;
+      color: #0c0c0c;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .cta-button:hover {
+      background-color: #0c0c0c;
+      color: #00ffcc;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #121212;
+      color: #888;
+    }
+    /* Add logo in the top-right corner */
+    .logo {
+      position: fixed;
+      top: 20px; /* Adjust the distance from the top */
+      right: 20px; /* Adjust the distance from the right */
+      width: 80px; /* Adjust the size of the logo */
+      height: auto;
+    }
+    .social-media {
+      margin-top: 1rem;
+    }
+    .social-media a {
+      color: #00ffcc;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    .social-media a:hover {
+      color: #0c0c0c;
+      background-color: #00ffcc;
+      padding: 5px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo in the top-right corner -->
+  <img src="logo.jpg" alt="Logo" class="logo" />
+  
+  <header>
+    <h1>PhishProof Solutions</h1>
+    <p>Cybersecurity for the modern world</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Choose the Right Plan for Your Security</h2>
+    <p>Protect your digital life with PhishProof Solutions. Choose a plan that fits your needs and let us handle your privacy and security.</p>
+  </div>
+
+  <div class="pricing-table">
+    <div class="pricing-plan">
+      <h3>Basic Plan</h3>
+      <p>For individuals looking for essential cybersecurity protection</p>
+      <div class="price">$9.99/month</div>
+      <ul class="features">
+        <li>AI-powered antivirus</li>
+        <li>Real-time security check</li>
+        <li>Online data removal (limited)</li>
+      </ul>
+      <a href="signup.html" class="cta-button">Get Started</a>
+    </div>
+
+    <div class="pricing-plan">
+      <h3>Premium Plan</h3>
+      <p>For users who want advanced protection with personalized features</p>
+      <div class="price">$19.99/month</div>
+      <ul class="features">
+        <li>All Basic Plan features</li>
+        <li>Unlimited online data removal</li>
+        <li>Dynamic pricing based on habits</li>
+        <li>OSINT and Digital Forensics services</li>
+      </ul>
+      <a href="signup.html" class="cta-button">Get Started</a>
+    </div>
+
+    <div class="pricing-plan">
+      <h3>Enterprise Plan</h3>
+      <p>For businesses looking for the highest level of protection for teams and customers</p>
+      <div class="price">$49.99/month</div>
+      <ul class="features">
+        <li>All Premium Plan features</li>
+        <li>Custom security solutions for enterprises</li>
+        <li>Live data input protection</li>
+        <li>Priority support and consultation</li>
+      </ul>
+      <a href="signup.html" class="cta-button">Get Started</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 PhishProof Solutions. All Rights Reserved.</p>
+    <div class="social-media">
+      <a href="https://www.instagram.com/phishproofsolutions/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/phish-proof-solutions/?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3BdsEuduJ2Q9KCqtecgdFnbA%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/share/16ExAsjXVu/" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
