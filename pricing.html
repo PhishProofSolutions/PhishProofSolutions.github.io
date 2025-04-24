@@ -109,12 +109,23 @@
     }
     /* Add logo in the top-right corner */
     .logo {
-      position: fixed;
+      position: fixed;  /* Fixed position ensures the logo stays in place when scrolling */
       top: 20px; /* Adjust the distance from the top */
       right: 20px; /* Adjust the distance from the right */
-      width: 80px; /* Adjust the size of the logo */
+      width: 80px; /* Default size of the logo */
       height: auto;
+      z-index: 9999; /* Ensures logo stays above other content */
     }
+    
+    /* Media Query for mobile devices */
+    @media (max-width: 600px) {
+      .logo {
+        width: 60px; /* Adjust logo size for smaller screens */
+        top: 15px; /* Adjust logo position for smaller screens */
+        right: 15px; /* Adjust logo position for smaller screens */
+      }
+    }
+
     .social-media {
       margin-top: 1rem;
     }
